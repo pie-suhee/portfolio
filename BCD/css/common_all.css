@@ -24,7 +24,7 @@
 	.m_con {display:block;}
 
 	.w_img {display:none;}
-	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	.m_img {display:inline-block; zoom:1; width:100%;}
 	
 	.w_span {display:none;}
 	.m_span {display:inline-block;}
@@ -36,12 +36,12 @@
 	.m_bar {display:inline;}
 	
 	/*라디오 버튼*/
-	.radio_label .check_icon {display:inline-block; *display:inline; zoom:1; width:30px; height:30px; margin-right:13px; background-image:url("/portfolio/bcdcorp/img/t_radio_icon_off.png");}
-	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/t_radio_icon_on.png");}
+	.radio_label .check_icon {display:inline-block; zoom:1; width:30px; height:30px; margin-right:13px; background-image:url("/img/t_radio_icon_off.png");}
+	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/img/t_radio_icon_on.png");}
 	
 	/*체크박스 버튼*/
-	.checkbox_label .check_icon {display:inline-block; *display:inline; zoom:1; width:24px; height:24px; margin-right:9px; background-image:url("/portfolio/bcdcorp/img/t_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
-	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/t_checkbox_icon_on.png");}
+	.checkbox_label .check_icon {display:inline-block; zoom:1; width:24px; height:24px; margin-right:9px; background-image:url("/img/t_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
+	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/img/t_checkbox_icon_on.png");}
 	
 	/*헤더*/
 	#header > .contents_con {width:81.5%; padding:25px 0;}
@@ -82,20 +82,20 @@
 	#landing_con > .info04_con > .contents_con > .list_con {margin-top:74px;}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li {float:none; width:100%; margin-left:0;}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div {height:372px; margin-top:36px; position:relative;}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div01 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div01_bg_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div02 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div02_bg_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div03 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div03_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div01 {background-image:url("/img/m_info04_con_list_div01_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div02 {background-image:url("/img/m_info04_con_list_div02_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div03 {background-image:url("/img/m_info04_con_list_div03_bg_off.png");}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con {width:73%; position:absolute; top:50%; left:0; right:0; transform:translateY(-50%);}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .title_con {padding-top:0;}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .title_con > span {font-size:45px; line-height:53px;}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .icon_con {width:39px; height:39px; margin:0 auto; margin-top:30px; background-image:url("/portfolio/bcdcorp/img/m_info04_con_plus_icon_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div01 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div01_bg_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div02 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div02_bg_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div03 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div03_bg_off.png");}
-	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div > .contents_con > .icon_con {background-image:url("/portfolio/bcdcorp/img/m_info04_con_plus_icon_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .icon_con {width:39px; height:39px; margin:0 auto; margin-top:30px; background-image:url("/img/m_info04_con_plus_icon_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div01 {background-image:url("/img/m_info04_con_list_div01_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div02 {background-image:url("/img/m_info04_con_list_div02_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div03 {background-image:url("/img/m_info04_con_list_div03_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div > .contents_con > .icon_con {background-image:url("/img/m_info04_con_plus_icon_off.png");}
 	#landing_con > .info04_con > .contents_con > .list_con > ul > li:first-child > .list_div {margin-top:0;}
 	
-	#landing_con > .info05_con {background-image:url("/portfolio/bcdcorp/img/m_info05_con_bg.png"); background-size:contain; background-position:top right;}
+	#landing_con > .info05_con {background-image:url("/img/m_info05_con_bg.png"); background-size:contain; background-position:top right;}
 	#landing_con > .info05_con > .contents_con {padding:90px 0 180px 0;}
 	#landing_con > .info05_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
 	#landing_con > .info05_con > .contents_con > .list_con {padding-top:70px;}
@@ -150,7 +150,7 @@
 	.m_con {display:block;}
 
 	.w_img {display:none;}
-	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	.m_img {display:inline-block; zoom:1; width:100%;}
 	
 	.w_span {display:none;}
 	.m_span {display:inline-block;}
@@ -162,12 +162,12 @@
 	.m_bar {display:inline;}
 	
 	/*라디오 버튼*/
-	.radio_label .check_icon {display:inline-block; *display:inline; zoom:1; width:22px; height:22px; margin-right:9px; background-image:url("/portfolio/bcdcorp/img/m_radio_icon_off.png");}
-	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/m_radio_icon_on.png");}
+	.radio_label .check_icon {display:inline-block; zoom:1; width:22px; height:22px; margin-right:9px; background-image:url("/img/m_radio_icon_off.png");}
+	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/img/m_radio_icon_on.png");}
 	
 	/*체크박스 버튼*/
-	.checkbox_label .check_icon {display:inline-block; *display:inline; zoom:1; width:18px; height:18px; margin-right:5px; background-image:url("/portfolio/bcdcorp/img/m_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
-	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/m_checkbox_icon_on.png");}
+	.checkbox_label .check_icon {display:inline-block; zoom:1; width:18px; height:18px; margin-right:5px; background-image:url("/img/m_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
+	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/img/m_checkbox_icon_on.png");}
 	
 	/*헤더*/
 	#header > .contents_con {width:87%; padding:18px 0;}
