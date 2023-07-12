@@ -1,0 +1,157 @@
+/*Poppins*/
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Thin.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Thin.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Thin.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Thin.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Thin.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Thin.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-ExtraLight.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-ExtraLight.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-ExtraLight.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-ExtraLight.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-ExtraLight.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-ExtraLight.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Light.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Light.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Light.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Light.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Light.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Regular.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Regular.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Regular.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Regular.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Regular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Medium.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Medium.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Medium.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Medium.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Medium.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-SemiBold.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-SemiBold.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-SemiBold.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-SemiBold.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Bold.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Bold.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Bold.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Bold.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-ExtraBold.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-ExtraBold.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-ExtraBold.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-ExtraBold.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-ExtraBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/Poppins-Black.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Poppins-Black.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Poppins-Black.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Poppins-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Poppins-Black.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Poppins-Black.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 900;
+	font-style: normal;
+}
+
+/*Gmarket Sans*/
+@font-face {
+	font-family: "Gmarket Sans";
+	src: url("/css/fonts/GmarketSansLight.eot"); /* IE9 Compat Modes */
+	src: url("/css/fonts/GmarketSansLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("/css/fonts/GmarketSansLight.otf") format("opentype"), /* Open Type Font */
+		 url("/css/fonts/GmarketSansLight.svg") format("svg"), /* Legacy iOS */
+		 url("/css/fonts/GmarketSansLight.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("/css/fonts/GmarketSansLight.woff") format("woff"), /* Modern Browsers */
+		 url("/css/fonts/GmarketSansLight.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gmarket Sans";
+	src: url("/css/fonts/GmarketSansMedium.eot"); /* IE9 Compat Modes */
+	src: url("/css/fonts/GmarketSansMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("/css/fonts/GmarketSansMedium.otf") format("opentype"), /* Open Type Font */
+		 url("/css/fonts/GmarketSansMedium.svg") format("svg"), /* Legacy iOS */
+		 url("/css/fonts/GmarketSansMedium.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("/css/fonts/GmarketSansMedium.woff") format("woff"), /* Modern Browsers */
+		 url("/css/fonts/GmarketSansMedium.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gmarket Sans";
+	src: url("/css/fonts/GmarketSansBold.eot"); /* IE9 Compat Modes */
+	src: url("/css/fonts/GmarketSansBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("/css/fonts/GmarketSansBold.otf") format("opentype"), /* Open Type Font */
+		 url("/css/fonts/GmarketSansBold.svg") format("svg"), /* Legacy iOS */
+		 url("/css/fonts/GmarketSansBold.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("/css/fonts/GmarketSansBold.woff") format("woff"), /* Modern Browsers */
+		 url("/css/fonts/GmarketSansBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 700;
+	font-style: normal;
+}

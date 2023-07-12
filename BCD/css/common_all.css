@@ -1,0 +1,274 @@
+@media all and (max-width: 1445px) {
+	/*info01 text사이즈, 주사위01위치 (곱하기 0.75)*/
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span {font-size:82px; line-height:97px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span > .bold {font-size:105px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con {width:72px; position:absolute; top:-1vh; left:115px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con {padding-top:43px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con > span {font-size:16px; line-height:30px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .text_con > span {font-size:9px; line-height:17px;}
+}
+
+@media all and (max-width: 1085px) {
+	/*info01 text사이즈, 주사위01위치 (곱하기 0.56)*/
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span {font-size:61px; line-height:72px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span > .bold {font-size:78px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con {width:53px; position:absolute; top:-1vh; left:80px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con {padding-top:32px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con > span {font-size:12px; line-height:22px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .text_con > span {font-size:6px; line-height:14px;}
+}
+
+@media all and (max-width: 1024px) {
+	
+	.w_con {display:none;}
+	.m_con {display:block;}
+
+	.w_img {display:none;}
+	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	
+	.w_span {display:none;}
+	.m_span {display:inline-block;}
+
+	.w_br {display:none;}
+	.m_br {display:inline;}
+
+	.w_bar {display:none;}
+	.m_bar {display:inline;}
+	
+	/*라디오 버튼*/
+	.radio_label .check_icon {display:inline-block; *display:inline; zoom:1; width:30px; height:30px; margin-right:13px; background-image:url("/portfolio/bcdcorp/img/t_radio_icon_off.png");}
+	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/t_radio_icon_on.png");}
+	
+	/*체크박스 버튼*/
+	.checkbox_label .check_icon {display:inline-block; *display:inline; zoom:1; width:24px; height:24px; margin-right:9px; background-image:url("/portfolio/bcdcorp/img/t_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
+	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/t_checkbox_icon_on.png");}
+	
+	/*헤더*/
+	#header > .contents_con {width:81.5%; padding:25px 0;}
+	#header > .contents_con > .logo {float:left; width:102px;}
+	#header > .contents_con > .m_nav {float:right; width:27px;}
+	
+	/*랜딩*/
+	#landing_con > .info01_con {background:linear-gradient(180deg,#000000 99%, #ffffff 1%);}
+	#landing_con > .info01_con > .contents_con {width:81.5%;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span {font-size:63px; line-height:89px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span > .bold {font-size:84px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con {width:57px; position:absolute; top:0vh; left:90px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con {padding-top:50px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con > span {font-size:18px; line-height:33px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn {padding-top:12vh;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .text_con > span {font-size:21px; line-height:29px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .icon_con {padding-top:14px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .icon_con img {width:18px;}
+
+	#landing_con > .info02_con > .contents_con {width:81.5%; padding:74px 0 90px 0;}
+	#landing_con > .info02_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
+	#landing_con > .info02_con > .contents_con > .list_con {padding-top:74px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li {padding-top:48px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .title_con > ul > li > span {padding:12px 27px;font-size:30px; line-height:38px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con {margin-top:-25px; padding-top:25px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con.line2 {margin-top:-100px; padding-top:100px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con > .info_con {padding:44px 26px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con > .info_con > span {font-size:20px; line-height:36px;}
+	
+	#landing_con > .info03_con > .contents_con {padding:90px 0 142px 0;}
+	#landing_con > .info03_con > .contents_con > .title_con {padding-bottom:180px;}
+	#landing_con > .info03_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
+	#landing_con > .info03_con > .contents_con > .contents_con > .icon_con {width:57px; padding-top:0;}
+	#landing_con > .info03_con > .contents_con > .contents_con > .img_con {width:87.5%;}
+	
+	#landing_con > .info04_con > .contents_con {width:81.5%; padding:142px 0 90px 0;}
+	#landing_con > .info04_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
+	#landing_con > .info04_con > .contents_con > .list_con {margin-top:74px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li {float:none; width:100%; margin-left:0;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div {height:372px; margin-top:36px; position:relative;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div01 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div01_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div02 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div02_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div03 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div03_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con {width:73%; position:absolute; top:50%; left:0; right:0; transform:translateY(-50%);}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .title_con {padding-top:0;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .title_con > span {font-size:45px; line-height:53px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .icon_con {width:39px; height:39px; margin:0 auto; margin-top:30px; background-image:url("/portfolio/bcdcorp/img/m_info04_con_plus_icon_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div01 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div01_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div02 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div02_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div03 {background-image:url("/portfolio/bcdcorp/img/m_info04_con_list_div03_bg_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:hover > .list_div > .contents_con > .icon_con {background-image:url("/portfolio/bcdcorp/img/m_info04_con_plus_icon_off.png");}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li:first-child > .list_div {margin-top:0;}
+	
+	#landing_con > .info05_con {background-image:url("/portfolio/bcdcorp/img/m_info05_con_bg.png"); background-size:contain; background-position:top right;}
+	#landing_con > .info05_con > .contents_con {padding:90px 0 180px 0;}
+	#landing_con > .info05_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
+	#landing_con > .info05_con > .contents_con > .list_con {padding-top:70px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .text_con {width:81.5%; padding-bottom:20px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .text_con > span {font-size:24px; line-height:32px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con {width:81.5%; padding-top:62px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li {padding-top:100px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .title_con {}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .title_con > span {font-size:27px; line-height:35px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con {padding-top:56px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con > .slide_con > .swiper-container > .swiper-wrapper > .swiper-slide {}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con > .control_con {opacity:0;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .img_con {width:81.5%; padding-top:117px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .img_con > ul > li {float:none; width:100%; margin-top:27px; margin-left:0;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .img_con > ul > li:first-child {margin-top:0;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li:first-child {padding-top:0;}
+	#landing_con > .info05_con > .contents_con > .list_con:first-child {padding-top:74px;}
+	
+	#landing_con > .info06_con > .contents_con {width:81.5%; max-width:834px; padding:180px 0;}
+	#landing_con > .info06_con > .contents_con > .title_con > span {font-size:48px; line-height:56px;}
+	#landing_con > .info06_con > .contents_con > .title_con > span > .size {font-size:18px; line-height:26px;}
+	#landing_con > .info06_con > .contents_con > .write_con {padding-top:64px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li {margin-top:32px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .title_con > span {font-size:20px; line-height:28px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con {padding-top:13px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con > .input {padding:0 20px; font-size:20px; line-height:60px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con > .textarea {height:155px; padding:20px; font-size:20px; line-height:28px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con {padding-top:13px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con > ul > li {margin-left:52px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con > ul > li > .list_div > .radio_label > span {font-size:20px; line-height:28px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .checkbox_con {float:none;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .checkbox_con > .checkbox_label > span {font-size:20px; line-height:28px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .checkbox_con > .checkbox_label > a {margin-left:18px; padding:5px 15px; font-size:15px; line-height:23px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .btn_con {margin-top:48px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .btn_con > a {font-size:20px; line-height:57px;}
+	
+	/*푸터*/
+	#footer > .contents_con {width:81.5%; padding:80px 0;}
+	#footer > .contents_con > .logo_con {width:100px;}
+	#footer > .contents_con > .text_con {padding-top:10px;}
+	#footer > .contents_con > .text_con > span {font-size:16px; line-height:24px;}
+	#footer > .contents_con > .text_con:nth-child(2) {padding-top:37px;}
+	
+	/*하단 퀵*/
+	#bottom_quick_menu {width:60px; bottom:5%; right:9%;}
+
+}
+
+@media all and (max-width: 768px) {
+
+	.w_con {display:none;}
+	.m_con {display:block;}
+
+	.w_img {display:none;}
+	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	
+	.w_span {display:none;}
+	.m_span {display:inline-block;}
+
+	.w_br {display:none;}
+	.m_br {display:inline;}
+
+	.w_bar {display:none;}
+	.m_bar {display:inline;}
+	
+	/*라디오 버튼*/
+	.radio_label .check_icon {display:inline-block; *display:inline; zoom:1; width:22px; height:22px; margin-right:9px; background-image:url("/portfolio/bcdcorp/img/m_radio_icon_off.png");}
+	.radio_label input[type=radio]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/m_radio_icon_on.png");}
+	
+	/*체크박스 버튼*/
+	.checkbox_label .check_icon {display:inline-block; *display:inline; zoom:1; width:18px; height:18px; margin-right:5px; background-image:url("/portfolio/bcdcorp/img/m_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
+	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("/portfolio/bcdcorp/img/m_checkbox_icon_on.png");}
+	
+	/*헤더*/
+	#header > .contents_con {width:87%; padding:18px 0;}
+	#header > .contents_con > .logo {width:76px;}
+	#header > .contents_con > .m_nav {width:20px;}
+	
+	/*메인 메뉴*/
+	#main_nav > .contents_con > .main_right_nav > .header_con {padding:25px 0;}
+	#main_nav > .contents_con > .main_right_nav > .header_con > .contents_con {width:87%;}
+	#main_nav > .contents_con > .main_right_nav > .header_con > .contents_con > .logo_con {width:76px;}
+	#main_nav > .contents_con > .main_right_nav > .header_con > .contents_con > .btn_con {width:16px;}
+	#main_nav > .contents_con > .main_right_nav > .nav {padding-top:25px;}
+	#main_nav > .contents_con > .main_right_nav > .nav > .contents_con {width:87%;}
+	#main_nav > .contents_con > .main_right_nav > .nav > .contents_con > ul > li {margin-top:25px;}
+	#main_nav > .contents_con > .main_right_nav > .nav > .contents_con > ul > li > a {font-size:22px; line-height:30px;}
+	#main_nav > .contents_con > .main_right_nav > .btn_con {margin-top:35px;}
+	#main_nav > .contents_con > .main_right_nav > .btn_con > .contents_con {width:87%;}
+	#main_nav > .contents_con > .main_right_nav > .btn_con > .contents_con > a {font-size:22px; line-height:47px;}
+	
+	/*랜딩*/
+	#landing_con > .info01_con > .contents_con {width:87%;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span {font-size:46px; line-height:68px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > span > .bold {font-size:63px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con {width:42px; left:63px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con {padding-top:37px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .info_con > span {font-size:13px; line-height:24px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .text_con > span {font-size:15px; line-height:23px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .icon_con {padding-top:10px;}
+	#landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn > a > .icon_con img {width:13px;}
+	
+	#landing_con > .info02_con > .contents_con {width:87%; padding:55px 0 70px 0;}
+	#landing_con > .info02_con > .contents_con > .title_con > span {font-size:36px; line-height:44px;}
+	#landing_con > .info02_con > .contents_con > .list_con {padding-top:55px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li {padding-top:36px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .title_con > ul > li > span {padding:9px 20px;font-size:13px; line-height:21px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con {margin-top:-18px; padding-top:18px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con.line2 {margin-top:-75px; padding-top:75px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con > .info_con {padding:33px 19px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > .list_div > .box_con > .info_con > span {font-size:15px; line-height:27px;}
+	
+	#landing_con > .info03_con > .contents_con {padding:70px 0 109px 0;}
+	#landing_con > .info03_con > .contents_con > .title_con {padding-bottom:135px;}
+	#landing_con > .info03_con > .contents_con > .title_con > span {font-size:36px; line-height:44px;}
+	#landing_con > .info03_con > .contents_con > .contents_con > .icon_con {width:42px;}
+	#landing_con > .info03_con > .contents_con > .contents_con > .img_con {width:87.5%;}
+	
+	#landing_con > .info04_con > .contents_con {width:87%; padding:109px 0 67px 0;}
+	#landing_con > .info04_con > .contents_con > .title_con > span {font-size:36px; line-height:44px;}
+	#landing_con > .info04_con > .contents_con > .list_con {margin-top:55px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div {height:279px; margin-top:27px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .title_con > span {font-size:33px; line-height:41px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .list_div > .contents_con > .icon_con {width:29px; height:29px; margin-top:22px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .close_btn {top:-26px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .close_btn > a > img {width:12px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .contents_con {padding:63px 0;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .contents_con > .title_con > span {font-size:33px; line-height:41px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .contents_con > .info_con {padding-top:45px;}
+	#landing_con > .info04_con > .contents_con > .list_con > ul > li > .apply_popup_con > .contents_con > .contents_con > .info_con > span {font-size:15px; line-height:29px;}
+	
+	#landing_con > .info05_con > .contents_con {padding:67px 0 135px 0;}
+	#landing_con > .info05_con > .contents_con > .title_con > span {font-size:36px; line-height:44px;}
+	#landing_con > .info05_con > .contents_con > .list_con {padding-top:52px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .text_con {width:87%; padding-bottom:15px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .text_con > span {font-size:17px; line-height:25px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con {padding-top:46px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li {padding-top:75px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .title_con {width:87%;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .title_con > span {font-size:20px; line-height:28px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con {padding-top:42px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con > .slide_con > .swiper-container > .swiper-wrapper > .swiper-slide {width:48.5%; margin-right:2%;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .list_con > .slide_con > .swiper-container > .swiper-wrapper > .swiper-slide > a > .circle_con {pointer-events:none;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .img_con {width:87%; padding-top:87px;}
+	#landing_con > .info05_con > .contents_con > .list_con > .contents_con > ul > li > .list_div > .img_con > ul > li {margin-top:20px;}
+	#landing_con > .info05_con > .contents_con > .list_con:first-child {padding-top:55px;}
+	
+	#landing_con > .info06_con > .contents_con {width:87%; max-width:625px; padding:135px 0;}
+	#landing_con > .info06_con > .contents_con > .title_con > span {font-size:36px; line-height:44px;}
+	#landing_con > .info06_con > .contents_con > .title_con > span > .size {font-size:13px; line-height:21px;}
+	#landing_con > .info06_con > .contents_con > .write_con {padding-top:48px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li {margin-top:24px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .title_con > span {font-size:15px; line-height:23px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con {padding-top:9px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con > .input {padding:0 15px; font-size:15px; line-height:45px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .input_con > .textarea {height:116px; padding:15px; font-size:15px; line-height:21px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con {padding-top:9px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con > ul > li {margin-left:39px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .radio_con > ul > li > .list_div > .radio_label > span {font-size:15px; line-height:23px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .checkbox_con > .checkbox_label > span {font-size:13px; line-height:21px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .list_con > ul > li > .list_div > .checkbox_con > .checkbox_label > a {margin-left:5px; padding:3px 3px; font-size:11px; line-height:19px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .btn_con {margin-top:36px;}
+	#landing_con > .info06_con > .contents_con > .write_con > form > .btn_con > a {font-size:15px; line-height:42px;}
+	
+	/*푸터*/
+	#footer > .contents_con {width:87%; padding:60px 0;}
+	#footer > .contents_con > .logo_con {width:75px;}
+	#footer > .contents_con > .text_con {padding-top:7px;}
+	#footer > .contents_con > .text_con > span {font-size:12px; line-height:20px;}
+	#footer > .contents_con > .text_con:nth-child(2) {padding-top:27px;}
+	
+	/*하단 퀵*/
+	#bottom_quick_menu {width:45px; right:6%;}
+	
+	
+}
