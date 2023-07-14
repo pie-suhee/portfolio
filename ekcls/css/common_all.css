@@ -82,7 +82,7 @@
 	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > .blankli {width:100%;}
 	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > .noborder {border:0;}
 	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > li > a {}
-	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > li > a > span {display:inline-block; width:100; padding-left:0; font-size:24px; color:#000000; font-weight:400; line-height:73px; letter-spacing:-0.5px;}
+	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > li > a > span {display:inline-block; width:100%; padding-left:0; font-size:24px; color:#000000; font-weight:400; line-height:73px; letter-spacing:-0.5px;}
 	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > ul > li > a > span:hover {background:none; color:#000000;}
 	#landing_con > .info02_con > .contents_con > .list_con > ul > li > table > tbody > tr > .list_td > .list_con > .bar {display:block;}
 
