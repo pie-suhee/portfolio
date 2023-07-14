@@ -40,8 +40,7 @@
 	.radio_label input[type=radio]:checked + .check_icon {background-image:url("../img/t_radio_icon_on.png");}
 	
 	/*체크박스 버튼*/
-	.checkbox_label .check_icon {display:inline-block; zoom:1; width:24px; height:24px; margin-right:9px; background-image:url("../img/t_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
-	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("../img/t_checkbox_icon_on.png");}
+	.checkbox_label .check_icon {display:inline-block; zoom:1; width:24px; height:24px; margin-right:9px; background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
 	
 	/*헤더*/
 	#header > .contents_con {width:81.5%; padding:25px 0;}
@@ -166,8 +165,7 @@
 	.radio_label input[type=radio]:checked + .check_icon {background-image:url("../img/m_radio_icon_on.png");}
 	
 	/*체크박스 버튼*/
-	.checkbox_label .check_icon {display:inline-block; zoom:1; width:18px; height:18px; margin-right:5px; background-image:url("../img/m_checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
-	.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("../img/m_checkbox_icon_on.png");}
+	.checkbox_label .check_icon {display:inline-block; zoom:1; width:18px; height:18px; margin-right:5px; vertical-align:middle; cursor:pointer;}
 	
 	/*헤더*/
 	#header > .contents_con {width:87%; padding:18px 0;}

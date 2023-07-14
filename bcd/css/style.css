@@ -92,9 +92,8 @@ select::-ms-expand {display:none;}
 /*체크박스 버튼*/
 .checkbox_label {display:inline-block; zoom:1; cursor:pointer;}
 .checkbox_label input[type=checkbox] {display:none;}
-.checkbox_label .check_icon {display:inline-block; zoom:1; width:12px; height:12px; margin-right:9px; background-image:url("../img/checkbox_icon_off.png"); background-repeat:no-repeat; vertical-align:middle; cursor:pointer;}
+.checkbox_label .check_icon {display:inline-block; zoom:1; width:12px; height:12px; margin-right:9px; vertical-align:middle; cursor:pointer;}
 .checkbox_label span {vertical-align:middle;}
-.checkbox_label input[type=checkbox]:checked + .check_icon {background-image:url("../img/checkbox_icon_on.png");}
 
 #wrap {width:100%; min-width:320px; margin:0 auto;}
 
