@@ -322,13 +322,13 @@
 	#landing_con > .info04_con > .contents_con {max-width:95%;}
 	
 	#landing_con > .info05_con {width:100%; margin:0 auto;}
-	#landing_con > .info05_con > .contents_con {width:100%; margin:0 auto; padding-bottom:18%;}
+	#landing_con > .info05_con > .contents_con {width:100%; margin:0 auto; /* padding-bottom:18%; */}
 	#landing_con > .info05_con > .contents_con > .title_con  {padding-top:66px; text-align:center;}
 	#landing_con > .info05_con > .contents_con > .title_con > span {font-size:27px; color:#000000; font-weight:700; line-height:33px; letter-spacing:0;}
 	#landing_con > .info05_con > .contents_con > .slide_con {}
 	#landing_con > .info05_con > .contents_con > .swiper_info05_slide {position:relative;}
 	#landing_con > .info05_con > .contents_con > .swiper_info05_slide:after {content:""; display:block; clear:both;}
-	#landing_con > .info05_con > .contents_con > .swiper_info05_slide .info05_info_slide {float:none; width:72%; height:21%; margin-top:21px;}
+	#landing_con > .info05_con > .contents_con > .swiper_info05_slide .info05_info_slide {float:none; width:72%; /* height:21%; */ margin-top:21px;}
 	#landing_con > .info05_con > .contents_con > .swiper_info05_slide .info05_info_slide .swiper-wrapper {}
 	#landing_con > .info05_con > .contents_con > .swiper_info05_slide .info05_info_slide .swiper-wrapper .info05_slide_div {}
 	#landing_con > .info05_con > .contents_con > .swiper_info05_slide .info05_info_slide .swiper-wrapper .info05_slide_div .swiper-slide-container {width:100%;}
