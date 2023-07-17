@@ -4,5 +4,5 @@
   <a href="https://pie-suhee.github.io/portfolio/bcd/" target="_blank"><img src="https://img.shields.io/badge/BCD 코퍼레이션-000000?style=flat&logoColor=white" style="height:30px;"/></a>
   <a href="https://pie-suhee.github.io/portfolio/ekcls/" target="_blank"><img src="https://img.shields.io/badge/한국사이버진흥원%20민간자격증-d9282b?style=flat&logoColor=white" style="height:30px"/></a>
   <a href="http://pfsb.co.kr/" target="_blank"><img src="https://img.shields.io/badge/피플퍼스트성북센터-a6569d?style=flat&logoColor=white" style="height:30px"/></a>
-  <a href="https://pie-suhee.github.io/portfolio/boot/1_toggle-side-nav/solution/" target="_blank"><img src="https://img.shields.io/badge/부트%20프로젝트01-a6569d?style=flat&logoColor=white" style="height:30px"/></a>
+  <a href="https://pie-suhee.github.io/portfolio/boot/1_toggle-side-nav/" target="_blank"><img src="https://img.shields.io/badge/부트%20프로젝트01-9999FF?style=flat&logoColor=white" style="height:30px"/></a>
 </div>
