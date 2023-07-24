@@ -1,0 +1,40 @@
+.SideVideo {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 2rem 0 0;
+}
+
+.VideoInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.UserInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.VideoText a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.Comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+@media (max-width: 875px) {
+    .SideVideo {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 0 3rem;
+    }
+}

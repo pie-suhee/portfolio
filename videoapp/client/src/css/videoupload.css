@@ -1,0 +1,29 @@
+.DropZone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.PlusImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 191px;
+    border: 1px solid lightgray;
+}
+
+.TumbnailImg {
+    margin-top: 0;
+}
+
+@media (max-width: 875px) {
+    .DropZone {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .TumbnailImg {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+.Duration {
+    margin: 4px;
+    padding: 2px 4px;
+    background-color: rgba(17, 17, 17, 0.8);
+    background-repeat: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.videoInfo {
+    display: flex;
+    gap: 15px;
+}
+
+.videoText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.videoText > span:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+}
