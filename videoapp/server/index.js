@@ -6,6 +6,19 @@ const config = require('./config/key');
 const { auth } = require('./middleware/auth');
 const { User } = require("./models/User");
 
+// Serve static assets if in production
+if(process.env.NODE_ENV === "production") {
+  
+  // Set static folder
+  // All the javascript and css files will be read and served from thif folder
+  app.use(express.static("client/build"));
+
+  // index.html for all page routes
+  app.get("*", (reg, res) => {
+    res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
+  });
+}
+
 //application/x-www-form-urlencoded 
 app.use(bodyParser.urlencoded({ extended: true }));
 
