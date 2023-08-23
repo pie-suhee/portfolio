@@ -1,28 +1,51 @@
-import { FC } from 'react';
-import Layout from './layout';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Index from "./components/index";
-import ProductDetail from "./components/productDetail";
-import Category from "./components/category";
-import Cart from "./components/Cart/index";
-import NotFound from "./components/notFound";
-import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './assets/css/tailwind.css';
+import './assets/css/style.css';
 
-const App: FC = () => {
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Drawer from './components/Drawer';
+import Error from './views/Error';
+import Index from './views/Index';
+import Products from './views/Products';
+import Cart from './views/Cart';
+import Fashion from './views/Fashion';
+import Accessory from './views/Accessory';
+import Digital from './views/Digital';
+import { ScrollToTop } from './helpers/helpers';
+import { useRef } from 'react';
+import { useCartLoad } from './composables/useCartLoad';
+
+const App = (): JSX.Element => {
+  const $hamburger = useRef<HTMLInputElement>(null);
+  const closeOverlay = () => {
+    $hamburger?.current?.click();
+  };
+  useCartLoad();
+
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
-          <Route path="/fashion" element={<Category />} />
-          <Route path="/accessory" element={<Category />} />
-          <Route path="/digital" element={<Category />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="grocery" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <BrowserRouter>
+      <ScrollToTop />
+      <main className='drawer'>
+        <input type='checkbox' id='side-menu' className='drawer-toggle' ref={$hamburger} />
+        <section className='drawer-content'>
+          <Nav />
+          <section className='main pt-16'>
+            <Routes>
+              <Route path='*' element={<Error />} />
+              <Route path='/' element={<Index />} />
+              <Route path='/product/:id' element={<Products />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/fashion' element={<Fashion />} />
+              <Route path='/accessory' element={<Accessory />} />
+              <Route path='/digital' element={<Digital />} />
+            </Routes>
+          </section>
+          <Footer />
+        </section>
+        <Drawer closeOverlay={closeOverlay} />
+      </main>
+    </BrowserRouter>
   );
 };
 
