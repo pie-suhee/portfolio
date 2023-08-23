@@ -24,7 +24,7 @@ const App = (): JSX.Element => {
   useCartLoad();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <main className='drawer'>
         <input type='checkbox' id='side-menu' className='drawer-toggle' ref={$hamburger} />
