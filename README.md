@@ -13,5 +13,6 @@
   <h2>🖥 개인 프로젝트</h2></br>
   <a href="https://pie-suhee.github.io/2023PJ-reactshop" target="_blank"><img src="https://img.shields.io/badge/React%20Shop-FB542B?style=flat&logoColor=white" style="height:30px"/></a></br>
   videoapp은 백엔드 코드가 포함되어 있어 배포하지 못했습니다. </br>
-  https://github.com/pie-suhee/portfolio/tree/main/videoapp 에서 코드를 확인해주세요!
+  https://github.com/pie-suhee/portfolio/tree/main/videoapp 에서 녹화된 화면과 코드를 확인해주세요! </br>
+  최대한 빨리 배포하겠습니다.
 </div>
