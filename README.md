@@ -11,7 +11,8 @@
   <a href="https://pie-suhee.github.io/portfolio/boot/3_star-rating/" target="_blank"><img src="https://img.shields.io/badge/부트%20프로젝트03-7373BF?style=flat&logoColor=white" style="height:30px"/></a>
   <a href="https://pie-suhee.github.io/portfolio/boot/4_calendar&datepicker/" target="_blank"><img src="https://img.shields.io/badge/부트%20프로젝트04-4D4D80?style=flat&logoColor=white" style="height:30px"/></a> <br /><br />
   <h2>🖥 개인 프로젝트</h2></br>
-  <a href="https://pie-suhee.github.io/2023PJ-reactshop" target="_blank"><img src="https://img.shields.io/badge/React%20Shop-FB542B?style=flat&logoColor=white" style="height:30px"/></a></br>
+  <a href="https://pie-suhee.github.io/2023PJ-reactshop" target="_blank"><img src="https://img.shields.io/badge/React%20Shop-FB542B?style=flat&logoColor=white" style="height:30px"/></a>
+<a href="https://github.com/pie-suhee/portfolio/tree/main/videoapp" target="_blank"><img src="https://img.shields.io/badge/Video%20App-FF9E0F?style=flat&logoColor=white" style="height:30px"/></a></br>
   videoapp은 백엔드 코드가 포함되어 있어 배포하지 못했습니다. </br>
   https://github.com/pie-suhee/portfolio/tree/main/videoapp 에서 녹화된 화면과 코드를 확인해주세요! </br>
   최대한 빨리 배포하겠습니다.
