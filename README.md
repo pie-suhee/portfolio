@@ -16,4 +16,6 @@
   videoapp은 백엔드 코드가 포함되어 있어 배포하지 못했습니다. </br>
   https://github.com/pie-suhee/portfolio/tree/main/videoapp 에서 녹화된 화면과 코드를 확인해주세요! </br>
   최대한 빨리 배포하겠습니다.
+ </br></br>
+  위 프로젝트는 모두 본인이 100% 작업한 것만 올려놨습니다.
 </div>
