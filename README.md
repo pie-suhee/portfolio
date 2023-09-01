@@ -15,9 +15,10 @@
 <a href="http://3.144.189.172" target="_blank">
  <img src="https://img.shields.io/badge/Video%20App-FF9E0F?style=flat&logoColor=white" style="height:30px"/>
 </a></br>
-  videoapp은 백엔드 코드가 포함되어 있어 배포하지 못했습니다. </br>
+  videoapp은 백엔드 코드가 포함되어 있어 완벽히 배포하지 못했습니다. </br>
   https://github.com/pie-suhee/portfolio/tree/main/videoapp 에서 녹화된 화면과 코드를 확인해주세요! </br>
-  최대한 빨리 배포하겠습니다.
+  현재 aws를 통해 client는 완벽히 배포하였지만 server부분이 문제가 있습니다. </br>
+  최대한 빨리 수정하겠습니다!
  </br></br>
   위 프로젝트는 모두 본인이 100% 작업한 것만 올려놨습니다.
 </div>
