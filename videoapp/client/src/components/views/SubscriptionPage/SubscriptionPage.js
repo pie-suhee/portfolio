@@ -38,7 +38,7 @@ function SubscriptionPage() {
         return <Col lg={6} md={8} xs={24}>
             <div style={{ position: 'relative', marginTop: '1rem' }}>
                 <a href={`/video/${video._id}`} >
-                    <img style={{ width: '100%' }} alt="thumbnail" src={`http://localhost:5000/${video.thumbnail}`} />
+                    <img style={{ width: '100%' }} alt="thumbnail" src={`http://18.222.143.17/${video.thumbnail}`} />
                     <div className="Duration">
                         <span>{minutes} : {seconds}</span>
                     </div>

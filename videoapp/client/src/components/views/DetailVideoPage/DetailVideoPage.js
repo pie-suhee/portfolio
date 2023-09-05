@@ -54,7 +54,7 @@ function DetailVideoPage(props) {
             <Row className='DetailLayout'>
                 <Col lg={18} xs={24}>
                     <div className="postPage" style={{ width: '100%', padding: '3rem 4em', boxSizing: 'border-box' }}>
-                        <video style={{ width: '100%' }} src={`http://localhost:5000/${Video.filePath}`} controls></video>
+                        <video style={{ width: '100%' }} src={`http://18.222.143.17:5000/${Video.filePath}`} controls></video>
 
                         <div className='VideoInfo'>
                             <div className='UserInfo'>

@@ -101,7 +101,6 @@ function UploadVideoPage() {
         axios.post('/api/video/uploadfiles', formData, config)
             .then(response => {
                 if (response.data.success) {
-
                     let variable = {
                         filePath: response.data.filePath,
                         fileName: response.data.fileName
@@ -119,8 +118,6 @@ function UploadVideoPage() {
                                 alert('Failed to make the thumbnails');
                             }
                         })
-
-
                 } else {
                     alert('failed to save the video in server')
                 }
@@ -150,7 +147,7 @@ function UploadVideoPage() {
 
                     {Thumbnail &&
                         <div className='TumbnailImg'>
-                            <img src={`http://localhost:5000/${Thumbnail}`} alt="Thumbnail" />
+                            <img src={`http://18.222.143.17:5000/${Thumbnail}`} alt="Thumbnail" />
                         </div>
                     }
                 </div>

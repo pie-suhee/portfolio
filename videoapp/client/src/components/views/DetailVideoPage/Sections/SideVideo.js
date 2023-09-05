@@ -29,7 +29,7 @@ function SideVideo() {
        return <div className='SideVideo'>
         <div style={{ width:'40%' }}>
             <a href={`/video/${video._id}`}  style={{ color:'gray' }}>
-                <img style={{ width: '100%' }} src={`http://localhost:5000/${video.thumbnail}`} alt="thumbnail" />
+                <img style={{ width: '100%' }} src={`http://18.222.143.17:5000/${video.thumbnail}`} alt="thumbnail" />
             </a>
         </div>
 
