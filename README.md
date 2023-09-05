@@ -12,7 +12,7 @@
   <a href="https://pie-suhee.github.io/portfolio/boot/4_calendar&datepicker/" target="_blank"><img src="https://img.shields.io/badge/부트%20프로젝트04-4D4D80?style=flat&logoColor=white" style="height:30px"/></a> <br /><br />
   <h2>🖥 개인 프로젝트</h2></br>
   <a href="https://pie-suhee.github.io/2023PJ-reactshop" target="_blank"><img src="https://img.shields.io/badge/React%20Shop-FB542B?style=flat&logoColor=white" style="height:30px"/></a>
-<a href="http://3.144.189.172" target="_blank">
+<a href="http://18.222.143.17" target="_blank">
  <img src="https://img.shields.io/badge/Video%20App-FF9E0F?style=flat&logoColor=white" style="height:30px"/>
 </a></br>
   videoapp은 백엔드 코드가 포함되어 있어 완벽히 배포하지 못했습니다. </br>
