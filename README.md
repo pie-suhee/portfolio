@@ -19,7 +19,6 @@
   <a href="https://pie-suhee.github.io/2023PJ-reactshop" target="_blank"><img src="https://img.shields.io/badge/React%20Shop-FB542B?style=flat&logoColor=white" style="height:30px"/></a>
 <a href="http://18.222.143.17" target="_blank">
  <img src="https://img.shields.io/badge/Video%20App-FF9E0F?style=flat&logoColor=white" style="height:30px"/>
-</a>
-<img src="https://img.shields.io/badge/Snap%20photos-00C16E?style=flat&logoColor=white" style="height:30px"/></br></br>
+</a></br></br>
   위 프로젝트는 모두 본인이 100% 작업한 것만 올려놨습니다.
 </div>
