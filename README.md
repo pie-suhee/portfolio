@@ -2,8 +2,7 @@
 
 <div align="center">
  <h2>
-  📃 포트폴리오 사이트</br> 
-  (100% 완성한 작업물은 아니며 이곳에서 더 편안하게 작업물들을 확인하실 수 있습니다.)
+  📃 포트폴리오 사이트
  </h2>
  <a href="https://suhee.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/포트폴리오-000000?style=flat&logoColor=white" style="height:30px;"/></a>
  <h2>🖥  전 직장 작업물</h2></br>
