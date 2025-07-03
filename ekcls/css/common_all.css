@@ -14,7 +14,7 @@
 	.m_con {display:block;}
 
 	.w_img {display:none;}
-	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	.m_img {display:inline-block; width:100%;}
 
 	.w_br {display:none;}
 	.m_br {display:inline;}
@@ -243,7 +243,7 @@
 	.m_con {display:block;}
 
 	.w_img {display:none;}
-	.m_img {display:inline-block; *display:inline; zoom:1; width:100%;}
+	.m_img {display:inline-block; width:100%;}
 
 	.w_br {display:none;}
 	.m_br {display:inline;}
