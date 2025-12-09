@@ -146,8 +146,8 @@ select::-ms-expand {display:none;}
 #landing_con > .info01_con > .contents_con > .contents_con > .title_con > h1 {position:relative;}
 #landing_con > .info01_con > .contents_con > .contents_con > .title_con > h1 > span {font-size:110px; color:#ffffff; font-weight:700; line-height:130px; letter-spacing:0.25px;}
 #landing_con > .info01_con > .contents_con > .contents_con > .title_con > h1 > span > .bold {font-size:140px;}
-#landing_con > .info01_con > .contents_con > .contents_con > .title_con > h1 > .dice01_con {width:96px; position:absolute; top:-1vh; left:145px;}
-#landing_con > .info01_con > .contents_con > .contents_con > .title_con > h1 > .dice01_con > img {}
+#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con {width:96px; position:absolute; top:-1vh; left:145px;}
+#landing_con > .info01_con > .contents_con > .contents_con > .title_con > .dice01_con > img {}
 #landing_con > .info01_con > .contents_con > .contents_con > .info_con {padding-top:58px;}
 #landing_con > .info01_con > .contents_con > .contents_con > .info_con > span {font-size:22px; color:#ffffff; font-weight:500; line-height:40px; letter-spacing:0;}
 #landing_con > .info01_con > .contents_con > .contents_con > .scroll_btn {padding-top:9vh; text-align:center;}
