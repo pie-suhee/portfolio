@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragDrop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dp_flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 드래그 앤 드롭 */
+        .answer_box {
+            position: relative;
+            z-index: 100;
+        }
+
+        .answer_list {
+            display: flex;
+            position: relative;
+        }
+
+        .quiz_correct .answer,
+        .answer_list .answer {
+            border-radius: 20px;
+            background-color: #bedaff;
+            width: 133px;
+            height: 75px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .answer_list .answer.disabled {
+            background-color: rgba(217, 217, 218, 1) !important;
+            color: rgba(180, 179, 180, 1) !important;
+        }
+
+        .answer_list .answer + .answer {
+            margin-left: 20px;
+        }
+
+        .quiz_box {
+            width: 100%;
+            height: 100%;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .quiz_box .block {
+            width: 144px;
+            height: 97px;
+            border: 4px solid rgba(190, 218, 255, 1);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .quiz_box .block + .block {
+            margin-left: 30px;
+        }
+
+        .quiz_box .block + .block::after {
+            content: "";
+            width: 30px;
+            height: 4px;
+            background-color: rgba(190, 218, 255, 1);
+            position: absolute;
+            top: 50%;
+            left: -4px;
+            transform: translate(-100%, -50%);
+        }
+
+        .quiz_box .txt_container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .quiz_box .quiz_select_wrap {
+            position: absolute;
+            left: 50%;
+            bottom: calc(50% - 250px);
+            transform: translate(-50%, -50%);
+            z-index: 100;
+        }
+
+        .quiz_box .quiz_select_wrap .answer_list .answer {
+            width: 150px;
+            height: 85px;
+            border-radius: 15px;
+        }
+
+        .quiz_box .quiz_select_wrap .answer_list .answer + .answer {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="dp_flex">Drag N Drop</h1>
+        <div class="quiz_box dp_flex">
+            <div class="block block1 dp_flex"><span>5</span></div>
+            <div class="block block2 dp_flex"><span>10</span></div>
+            <div class="block block3 dp_flex"><div class="txt_container txt_container1 dp_flex"><span>?</span></div></div>
+            <div class="block block4 dp_flex"><div class="txt_container txt_container2 dp_flex"><span>?</span></div></div>
+            <div class="quiz_select_wrap"></div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script defer src="./touchdnd.js"></script>
+<script>
+    let dragStartFlag = false;
+
+    // 드래그 할 경우 함수
+    const dregFn = () => {
+        $(".draggable")
+            .draggable()
+            .on("draggable:start", function (droppp, drag) {
+                if (!dragStartFlag) {
+                    dragStartFlag = true;
+                }
+
+                $(".draggable").removeClass("dragging");      
+                $(this).addClass("dragging");
+                $(".draggable:not(.dragging)").css("pointer-events", "").css("transform", "");
+            })
+            .on("draggable:stop", function (droppp, drag) {
+                $(this).removeClass('dragging');
+            });
+    };
+
+    //드롭 할 경우 함수
+    const dropppFn = () => {
+    $(".droppable")
+        .droppable({ disabled: false })
+        .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+            if (answer === dragAnswer) {
+                $(droppp.currentTarget).find(".placeholder").css("display", "none");
+            } else {
+                return false;
+            }
+            drag.item.addClass("pointerNone");
+        });
+    };
+
+    // 드래그 드롭 초기화
+    const quizDragDropSetInit = () => {
+        dragStartFlag = false;
+        $(".droppable")
+            .droppable({ disabled: true })
+            .off("droppable:drop")
+            .removeClass("droppable");
+        $(".draggable")
+            .draggable({ disabled: true })
+            .off("draggable:start")
+            .off("draggable:stop")
+            .removeClass("draggable disabled");
+        $(".answer_list.active").remove();
+    };
+
+    // 멀티 드래그 드롭 세팅
+    const quizMultiDragDropSetOn = (dropList, dropListEl, dropArr) => {
+        quizDragDropSetInit();
+
+        setTimeout(() => {
+            if (dropArr.length > 0) {
+            let html = '<div class="answer_list">';
+            for (let i = 0; i < dropArr.length; i++) {
+                html +=
+                '<div class="answer answer' +
+                (i + 1) +
+                ' draggable" data-val="' +
+                (i + 1) +
+                '">' +
+                dropArr[i] +
+                "</div>";
+            }
+            html += "</div>";
+
+            dropListEl.html(html);
+            dregFn();
+            }
+
+            if (dropList.length > 0) {
+            for (let i = 0; i < dropList.length; i++) {
+                $(dropList[i].dropEl)
+                .addClass("droppable")
+                .attr("data-val", dropList[i].correct)
+                .html('<div class="placeholder">?</div>');
+            }
+            }
+
+            dropppFn();
+        }, 100);
+    };
+
+    // 드래그 드롭 정답일 경우
+    const quizDragDropSetCorrect = (correctEl, isHidden = false) => {
+        $(".droppable").find(".placeholder").remove();
+        $(".droppable")
+            .droppable({ disabled: true })
+            .off("droppable:drop")
+            .removeClass("droppable");
+        $(".draggable")
+            .draggable({ disabled: true })
+            .off("draggable:start")
+            .off("draggable:stop")
+            .removeClass("draggable")
+            .addClass("disabled");
+
+        if (isHidden) {
+            $(".answer_list.active").remove();
+        } else {
+            $(".answer_list").removeClass("active");
+        }
+    };
+
+    stepDropList = [
+        {
+            dropEl: '.txt_container1',
+            correct: 1
+        },
+        {
+            dropEl: '.txt_container2',
+            correct: 2
+        },
+    ];
+
+    stepDropArr = [15, 20, 25];
+
+    quizMultiDragDropSetOn(stepDropList, $('.quiz_box .quiz_select_wrap'), stepDropArr);  
+</script>
+</html>

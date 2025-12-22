@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --minute-deg: 0;
+            --hour-deg: 30;
+        }
+
+        body {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            background-color: #d6e1e5;
+        }
+
+        .analog-clock {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 40px auto;
+            border: 5px solid white;
+            box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .analog-clock::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            border-radius: 50%;
+            z-index: 100;
+        }
+
+        .analog-clock>.hand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transform-origin: bottom;
+            z-index: 10;
+        }
+
+        .analog-clock>.hand.minute {
+            width: 6px;
+            height: 110px;
+            background-color: blue;
+            transform: translate3D(-50%, 0, 0) rotate(calc(var(--minute-deg) * 1deg));
+        }
+
+        .analog-clock>.hand.hour {
+            width: 8px;
+            height: 80px;
+            background-color: red;
+            transform: translate3D(-50%, 0, 0) rotate(calc(var(--hour-deg) * 1deg));
+        }
+
+        /* .analog-clock과 같은 크기의 블록 요소를 회전시킨다. */
+        .analog-clock>.time {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .analog-clock>.time.on {
+            color: red;
+        }
+
+        .analog-clock>.time span {
+            display: inline-block;
+        }
+
+        .analog-clock>.time.time1 {
+            transform: rotate(0deg);
+        }
+
+        .analog-clock>.time.time2 {
+            transform: rotate(30deg);
+        }
+
+        .analog-clock>.time.time2 span {
+            transform: rotate(-30deg);
+        }
+
+        .analog-clock>.time.time3 {
+            transform: rotate(60deg);
+        }
+
+        .analog-clock>.time.time3 span {
+            transform: rotate(-60deg);
+        }
+
+        .analog-clock>.time.time4 {
+            transform: rotate(90deg);
+        }
+
+        .analog-clock>.time.time4 span {
+            transform: rotate(-90deg);
+        }
+
+        .analog-clock>.time.time5 {
+            transform: rotate(120deg);
+        }
+
+        .analog-clock>.time.time5 span {
+            transform: rotate(-120deg);
+        }
+
+        .analog-clock>.time.time6 {
+            transform: rotate(150deg);
+        }
+
+        .analog-clock>.time.time6 span {
+            transform: rotate(-150deg);
+        }
+
+        .analog-clock>.time.time7 {
+            transform: rotate(180deg);
+        }
+
+        .analog-clock>.time.time7 span {
+            transform: rotate(-180deg);
+        }
+
+        .analog-clock>.time.time8 {
+            transform: rotate(210deg);
+        }
+
+        .analog-clock>.time.time8 span {
+            transform: rotate(-210deg);
+        }
+
+        .analog-clock>.time.time9 {
+            transform: rotate(240deg);
+        }
+
+        .analog-clock>.time.time9 span {
+            transform: rotate(-240deg);
+        }
+
+        .analog-clock>.time.time10 {
+            transform: rotate(270deg);
+        }
+
+        .analog-clock>.time.time10 span {
+            transform: rotate(-270deg);
+        }
+
+        .analog-clock>.time.time11 {
+            transform: rotate(300deg);
+        }
+
+        .analog-clock>.time.time11 span {
+            transform: rotate(-300deg);
+        }
+
+        .analog-clock>.time.time12 {
+            transform: rotate(330deg);
+        }
+
+        .analog-clock>.time.time12 span {
+            transform: rotate(-330deg);
+        }
+
+        .analog-clock .drag-area {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="analog-clock">
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="time time1"><span>12</span></div>
+        <div class="time time2"><span>1</span></div>
+        <div class="time time3"><span>2</span></div>
+        <div class="time time4"><span>3</span></div>
+        <div class="time time5"><span>4</span></div>
+        <div class="time time6"><span>5</span></div>
+        <div class="time time7"><span>6</span></div>
+        <div class="time time8"><span>7</span></div>
+        <div class="time time9"><span>8</span></div>
+        <div class="time time10"><span>9</span></div>
+        <div class="time time11"><span>10</span></div>
+        <div class="time time12"><span>11</span></div>
+        <div class="drag-area"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+    <!-- 태블릿 draggable 안 될 시 시계 들어가는 차시에 추가 -->
+
+    <script>
+        let centerX, centerY, angle, rotateDeg, clockNum;
+        let minuteDeg = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--minute-deg'));
+        let hourDeg = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--hour-deg'));
+        let dragVal = '--minute-deg';
+
+        $('.drag-area').draggable({
+            start: function (event) {
+                centerX = $('.analog-clock').offset().left + $('.analog-clock').width() / 2;
+                centerY = $('.analog-clock').offset().top + $('.analog-clock').height() / 2;
+            },
+            drag: function (event) {
+                console.log('drag!!!!!!!!!!!!!!!!!!!!!!!!!!');
+
+                // 마우스 위치와 중심 사이의 각도 계산
+                angle = Math.atan2(event.pageX - centerX, event.pageY - centerY);
+                console.log('event.pageX : ', event.pageX);
+                console.log('centerX : ', centerX);
+                console.log('event.pageY : ', event.pageY);
+                console.log('centerY : ', centerY);
+                console.log('angle : ', angle);
+
+                // 각도를 도(degree) 단위로 변환
+                rotateDeg = (angle * (180 / Math.PI) * -1) + 180;
+                console.log('rotateDeg : ', rotateDeg);
+
+                clockNum = Math.round(((rotateDeg % 360) / 30), 0) === 12 ? 0 : Math.round(((rotateDeg % 360) / 30), 0);
+                $(`.time${clockNum + 1}`).siblings().removeClass('on');
+                $(`.time${clockNum + 1}`).addClass('on');
+
+                document.documentElement.style.setProperty(dragVal, rotateDeg);
+                if (dragVal == '--minute-deg') {
+                    let hourRotateDeg = ((rotateDeg / 6) * 0.5) + hourDeg;
+                    console.log(hourDeg);
+                    console.log(hourRotateDeg);
+                    document.documentElement.style.setProperty('--hour-deg', hourRotateDeg);
+                }
+            },
+            stop: function (event) {
+                console.log('dragend');
+                // let clockHour = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360];
+
+                roundRotateDeg();
+
+                console.log('rotateDeg: ', rotateDeg);
+
+                document.documentElement.style.setProperty(dragVal, rotateDeg);
+
+                // 드래그 영역 초기화
+                $('.drag-area').css('left', '').css('top', '');
+
+                // 변수값 초기화
+                centerX = 0;
+                centerY = 0;
+
+                // dragVal = (dragVal == '--minute-deg') ? '--hour-deg' : '--minute-deg';
+            }
+        });
+
+        function roundRotateDeg() {
+            // 소수점 있는 각도를 정수로 반올림
+            let roundedDeg = Math.round(rotateDeg);
+
+            // 30의 배수로 반올림
+            let unit = (dragVal == '--minute-deg') ? 6 : 30;
+            let remainder = roundedDeg % unit;
+            if (remainder <= (unit / 2)) {
+                roundedDeg -= remainder;
+            } else {
+                roundedDeg += unit - remainder;
+            }
+
+            rotateDeg = roundedDeg;
+        };
+    </script>
+</body>
+
+</html>
