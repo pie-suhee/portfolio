@@ -1,5 +1,25 @@
 @media screen and (max-width: 991px) {
     header h1 {
-        font-size: 5em;
+        font-size: 4em;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav .list_box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav .list_box .list {
+        flex: 1 0 0;
     }
 }
