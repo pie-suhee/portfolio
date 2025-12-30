@@ -151,6 +151,10 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     background-color: #EAEAEA;
 }
 
+.project #container a:hover article {
+    box-shadow: none;
+}
+
 .project #container article .text_box {
     display: flex;
     flex-direction: column;
