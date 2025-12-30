@@ -121,6 +121,13 @@ body {
   line-height: 1;
 }
 
+a:active,
+a:link,
+a:visited,
+a:hover {
+  color: #201D1D;
+}
+
 ol,
 ul {
   list-style: none;

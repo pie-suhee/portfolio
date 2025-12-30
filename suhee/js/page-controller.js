@@ -10,8 +10,10 @@ barba.init({
         },
         // 새 페이지가 나타날 때 애니메이션
         enter(data) {
+            window.scrollTo(0, 0);
+
             // 1. 새 페이지의 내부 요소들을 찾음 (예: h1, .card)
-            const elements = data.next.container.querySelectorAll('h1, .listitem, #container');
+            const elements = data.next.container.querySelectorAll('h1, nav, #container');
 
             // 2. 타임라인 생성
             const tl = gsap.timeline();
@@ -27,3 +29,7 @@ barba.init({
         }
     }]
 });
+
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}

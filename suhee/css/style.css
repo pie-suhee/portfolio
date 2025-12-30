@@ -7,6 +7,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 30svh;
+    border-bottom: 1px solid #E1E1E1;
 }
 
 header h1 {
@@ -19,12 +20,14 @@ section {
     padding: 0 1.875em;
 }
 
-main,
 section + section {
     border-top: 1px solid #E1E1E1;
 }
 
 main {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     gap: 1.25em;
     padding: 1.875em 1.875em 0;
@@ -34,34 +37,7 @@ main {
     width: 100%;
 }
 
-#container section {
-    margin-bottom: 2em;
-}
-
-#container section h3,
-#container section h5 {
-    font-weight: 500;
-}
-
-#container section h3 {
-    padding-top: 2em;
-    font-size: 1.2em;
-}
-
-#container section h3 + ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    margin-top: 2em;
-}
-
-#container section h5 + ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 1.5em;
-}
-
+/* nav S: */
 nav {
     width: 100%;
     max-width: 20em;
@@ -118,3 +94,110 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     transform-origin: 50% 3700%;
     transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+/* nav E: */
+
+/* index 페이지 S: */
+.index #container section {
+    margin-bottom: 2em;
+}
+
+.index #container section h3,
+.index #container section h5 {
+    font-weight: 500;
+}
+
+.index #container section h3 {
+    padding-top: 2em;
+    font-size: 1.2em;
+}
+
+.index #container section h3 + ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.index #container section h5 + ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+/* index 페이지 E: */
+
+/* project 페이지 S: */
+.project #container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+
+.project #container article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    background-color: #FDFDFD;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
+
+.project #container a:visited article {
+    background-color: #EAEAEA;
+}
+
+.project #container article .text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.project #container article .text_box li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project #container article p.title {
+    font-size: 1.475em;
+    font-weight: 600;
+}
+
+.project #container article p.tag {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.project #container article .img_box {
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project #container article .img_box img,
+.project #container article .img_box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.project #container article .img_box video,
+.project #container article .img_box:hover img {
+    opacity: 0;
+}
+
+.project #container article .img_box:hover video {
+    opacity: 1;
+}
+/* project 페이지 E: */

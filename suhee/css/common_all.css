@@ -23,3 +23,19 @@
         flex: 1 0 0;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .project #container article {
+        align-items: start;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .project #container article .text_box {
+        order: 2;
+    }
+
+    .project #container article .img_box {
+        order: 1;
+    }
+}
