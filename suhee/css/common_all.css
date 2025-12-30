@@ -22,6 +22,10 @@
     nav .list_box .list {
         flex: 1 0 0;
     }
+    
+    .skill #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 800px) {
