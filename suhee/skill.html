@@ -12,7 +12,7 @@
     <script defer src="./js/page-controller.js"></script>
 </head>
 <body data-barba="wrapper">
-    <div id="wrap" class="project" data-barba="container" data-barba-namespace="project1">
+    <div id="wrap" class="skill" data-barba="container" data-barba-namespace="project1">
         <header class="title">
             <h1>Skill</h1>
         </header>
@@ -42,9 +42,38 @@
             </nav>
 
             <div id="container">
-                
+                <a href="https://pie-suhee.github.io/portfolio/function/dragndrop" target="_blank">
+                    <article class="card">
+                        <div class="img_box">
+                            <img src="./img/dragndrop.png" alt="드래그앤드롭 썸네일">
+    
+                            <video loop muted playsinline>
+                                <source src="./video/dragndrop.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <p>DRAG N DROP</p>
+                    </article>
+                </a>
             </div>
         </main>
     </div>
+
+    <script>
+        const imgBoxes = document.querySelectorAll('.img_box');
+
+        imgBoxes.forEach(imgBox => {
+            const video = imgBox.querySelector('video');
+
+            imgBox.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            imgBox.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
 </body>
 </html>
