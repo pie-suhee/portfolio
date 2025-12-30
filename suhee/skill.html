@@ -58,22 +58,5 @@
             </div>
         </main>
     </div>
-
-    <script>
-        const imgBoxes = document.querySelectorAll('.img_box');
-
-        imgBoxes.forEach(imgBox => {
-            const video = imgBox.querySelector('video');
-
-            imgBox.addEventListener('mouseenter', () => {
-                video.play();
-            });
-
-            imgBox.addEventListener('mouseleave', () => {
-                video.pause();
-                video.currentTime = 0;
-            });
-        });
-    </script>
 </body>
 </html>

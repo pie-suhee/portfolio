@@ -1,3 +1,18 @@
+function initVideoHover() {
+    const imgBoxes = document.querySelectorAll('.img_box');
+    
+    imgBoxes.forEach(imgBox => {
+        const video = imgBox.querySelector('video');
+        if (!video) return;
+
+        imgBox.addEventListener('mouseenter', () => video.play());
+        imgBox.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+}
+
 barba.init({
     transitions: [{
         name: 'opacity-transition',
@@ -12,7 +27,7 @@ barba.init({
         enter(data) {
             window.scrollTo(0, 0);
 
-            // 1. 새 페이지의 내부 요소들을 찾음 (예: h1, .card)
+            // 1. 새 페이지의 내부 요소들을 찾음
             const elements = data.next.container.querySelectorAll('h1, nav, #container');
 
             // 2. 타임라인 생성
@@ -26,9 +41,14 @@ barba.init({
                 stagger: 0.2, // 0.2초 간격으로 하나씩 순서대로 나타남!
                 ease: "back.out(1.7)" // 살짝 튕기는 느낌의 효과
             });
+        },
+        afterEnter() {
+            initVideoHover();
         }
     }]
 });
+
+window.addEventListener('DOMContentLoaded', initVideoHover);
 
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
