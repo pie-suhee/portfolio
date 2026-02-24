@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1300px) {
     header h1 {
         font-size: 4em;
     }
@@ -28,7 +28,88 @@
     }
 }
 
+@media screen and (max-width: 1120px) {
+    .index #container section.left_s .box.hover .item .ti_box .text_box .tit {
+        font-size: 20px;
+    }
+
+    .index #container section.left_s .box.hover .item .ti_box .text_box .desc {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .index #container section.right_s .bottom_s .box.type {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    .index #container {
+        flex-direction: column;
+    }
+
+    .index #container section.left_s {
+        width: 100%;
+    }
+
+    .index #container section.left_s .box.google {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .index #container section.left_s .box.hover {
+        height: auto;
+        aspect-ratio: 9/16;
+    }
+
+    .index #container section.left_s .box.hover .item .ti_box .text_box .tit {
+        font-size: 30px;
+    }
+
+    .index #container section.left_s .box.hover .item .ti_box .text_box .desc {
+        font-size: 16px;
+    }
+
+    .index #container section.right_s {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .index #container section.right_s .top_s {
+        height: auto;
+    }
+
+    .index #container section.right_s .top_s .rec_s a .box .text {
+        gap: 20px;
+    }
+
+    .index #container section.right_s .top_s .rec_s a .box .text .count {
+        font-size: 44px;
+    }
+
+    .index #container section.right_s .top_s .rec_s a .box .text .title {
+        font-size: 12px;
+    }
+
+    .index #container section.right_s .top_s .rec_s a .box .more_btn {
+        display: none;
+    }
+
+    .index #container section.right_s .bottom_s {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .index #container section.right_s .bottom_s .box.type {
+        font-size: 30px;
+    }
+
+    .index #container section.right_s .bottom_s a:nth-child(2) {
+        width: 100%;
+        height: auto;
+    }
+
     .project #container article {
         align-items: start;
         flex-direction: column;
