@@ -91,13 +91,10 @@ function initCuboidAnimation() {
         let dX = 2 * (pX - winW / 2) / winW;
         let dY = -2 * (pY - winH / 2) / winH;
         let positiveX = Math.abs(dX);
-        let positiveY = Math.abs(dY);
         let deltaS = 450 * positiveX;
-        let deltaW = 600 * positiveY;
 
         gsap.to(hiWords, {
             fontStretch: `${(550 - deltaS)}%`,
-            fontWeight: 800 - deltaW,
             duration: 2
         });
     }
