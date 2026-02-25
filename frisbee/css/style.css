@@ -248,6 +248,7 @@ html {
   width: 100%;
   height: 100%;
   visibility: visible;
+  cursor: pointer;
 }
 
 .oneScan-qr-accordion .accordion-text {
@@ -280,6 +281,7 @@ html {
 .oneScan-qr-accordion .accordion-head .accordion-btn-img img { 
   object-fit: none;
   object-position: right top;
+  cursor: pointer;
 }
 
 .oneScan-qr-accordion .accordion-head .accordion-btn-img img:first-child {
