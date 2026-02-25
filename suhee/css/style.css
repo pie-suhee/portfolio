@@ -565,8 +565,12 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
 
 .project #container article .text_box li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
+}
+
+.project #container article p {
+    word-break: keep-all;
 }
 
 .project #container article p.title {
@@ -575,6 +579,7 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
 }
 
 .project #container article p.tag {
+    flex-shrink: 0;
     font-size: 1em;
     font-weight: 600;
 }
