@@ -349,7 +349,7 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     overflow: hidden;
 }
 
-.hi {
+.index #container section.right_s .top_s .box.motion .hi {
     position: relative;
     z-index: 1;
     font-size: 100px;
@@ -361,7 +361,7 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     transform-style: preserve-3d;
 }
 
-.hi__cuboid {
+.index #container section.right_s .top_s .box.motion .hi__cuboid {
     position: relative;
     width: var(--c-width);
     height: var(--c-height);
@@ -369,7 +369,7 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     margin: 30px 0;
 }
 
-.face {
+.index #container section.right_s .top_s .box.motion .face {
     position: absolute;
     left: 0;
     top: 0;
@@ -381,31 +381,31 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     border: 0.5px solid var(--grey); /* 입체감을 위한 경계선 */
 }
 
-.face--front {
+.index #container section.right_s .top_s .box.motion .face--front {
     width: var(--c-width);
     height: var(--c-height);
     transform: translateZ(calc(var(--c-depth) / 2));
 }
 
-.face--back {
+.index #container section.right_s .top_s .box.motion .face--back {
     width: var(--c-width);
     height: var(--c-height);
     transform: translateZ(calc(var(--c-depth) / -2)) rotateY(180deg) rotate(180deg);
 }
 
-.face--left {
+.index #container section.right_s .top_s .box.motion .face--left {
     width: var(--c-depth);
     height: var(--c-height);
     transform: translateX(calc(var(--c-depth) / -2)) rotateY(-90deg);
 }
 
-.face--right {
+.index #container section.right_s .top_s .box.motion .face--right {
     width: var(--c-depth);
     height: var(--c-height);
     transform: translateX(calc(var(--c-width) - (var(--c-depth) / 2))) rotateY(90deg);
 }
 
-.face--top {
+.index #container section.right_s .top_s .box.motion .face--top {
     width: var(--c-width);
     height: var(--c-depth);
     transform: translateY(calc(var(--c-depth) / -2)) rotateX(90deg);
@@ -413,7 +413,7 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     color: black;
 }
 
-.face--bottom {
+.index #container section.right_s .top_s .box.motion .face--bottom {
     width: var(--c-width);
     height: var(--c-depth);
     transform: translateY(calc(var(--c-height) - (var(--c-depth) / 2))) rotateX(-90deg);
@@ -421,14 +421,12 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     color: black;
 }
 
-/* ========================================================== */
-
-.hi__word {
+.index #container section.right_s .top_s .box.motion .hi__word {
     margin: 0;
     transform: translateY(-5px);
 }
 
-.hi__base {
+.index #container section.right_s .top_s .box.motion .hi__base {
     position: absolute;
     z-index: 0;
     top: 50%;
@@ -438,14 +436,14 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     height: 100%;
 }
 
-.hi__base-plate {
+.index #container section.right_s .top_s .box.motion .hi__base-plate {
     width: 100%;
     height: 100%;
     background: black;
     border: 1px solid var(--grey);
 }
 
-.hi__location {
+.index #container section.right_s .top_s .box.motion .hi__location {
     position: absolute;
     margin: 0;
     font-size: 20px;
@@ -453,49 +451,16 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     font-weight: 400;
 }
 
-.hi__location--lat {
+.index #container section.right_s .top_s .box.motion .hi__location--lat {
     top: 50%;
     left: 0;
     transform: rotate(-90deg) translateX(10px);
 }
 
-.hi__location--long {
+.index #container section.right_s .top_s .box.motion .hi__location--long {
     top: 50%;
     right: 0;
     transform: rotate(90deg) translateX(-10px);
-}
-
-/* UI Elements */
-.collection {
-    position: fixed;
-    z-index: 1000;
-    top: 24px;
-    right: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.collection__link {
-    position: relative;
-    margin-bottom: 16px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.collection__link span {
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    height: 1px;
-    width: 10%;
-    background-color: white;
-    transition: width 0.3s;
-}
-
-.collection__link:hover span {
-    width: 100%;
 }
 
 .index #container section.right_s .bottom_s {
@@ -547,10 +512,6 @@ nav .list_box .button:hover .button-label:nth-of-type(2) {
     background-color: #FDFDFD;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
-}
-
-.project #container a:visited article {
-    background-color: #EAEAEA;
 }
 
 .project #container a:hover article {
