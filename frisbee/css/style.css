@@ -1,0 +1,742 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.pretendard {
+  font-family: 'Pretendard';
+}
+
+:root {
+  --main-bakcground-color: rgba(245, 245, 247, 1);
+  --box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  --section-border-radius: 1.6em; 
+}
+
+*{box-sizing: border-box; line-height: 1;}
+body {width:100%; margin:0 auto; padding:0; line-height:normal; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;}
+img {border:none; padding:0; margin:0; outline:none;}
+a {border:none; padding:0; margin:0; outline:none; text-decoration:none;}
+a:active {color:#000000; text-decoration:none;}
+a:link {color:#000000; text-decoration:none;}
+a:visited {color:#000000; text-decoration:none;}
+a:hover {color:#000000; text-decoration:none;}
+ul {list-style:none; padding:0; margin:0;}
+ul > li {display:block;}
+button {background-color:transparent; border:none;}
+.img {display:block; width:100%;}
+
+html {
+  background: var(--main-bakcground-color);
+  font-family: "noto-sans-cjk-kr", sans-serif;
+  font-size: 28px;
+}
+
+@media all and (max-width: 1024px) {
+  html {font-size: 24px;}
+}
+
+@media all and (max-width: 768px) {
+  html {font-size: 18px;}
+}
+
+@media all and (max-width: 425px) {
+  html {font-size: 14px;}
+}
+
+/* z플립 */
+@media all and (max-width: 320px) {
+  html {font-size: 12px;}
+}
+
+/* em 계산 12px로 하기 */
+
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  padding: 4.3% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 20241209 로고 클릭시 다른페이지 이동 팝업 */
+.popupBg{
+  display: none;
+}
+.popupBg.active{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0 0 0 / 60%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  z-index: 1149;
+}
+.popupContent{
+  display: none;
+}
+.popupContent.active{
+  box-shadow: 4px 10px 20px 0 rgba(40, 65, 106, 0.21);
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1150;
+  /* overflow: hidden; */
+}
+.popupContent.active .textSec{
+  width: 100%;
+  min-height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+.popupContent.active .textSec .mainText{
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.72px;
+  color: #363e4a;
+}
+.popupContent.active .buttonBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupContent.active .buttonBox .bttns{
+  width: 113px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.popupContent.active .buttonBox .no{
+  width: 50%;
+  background-color: #6e7683;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 0 0 8px;
+}
+.popupContent.active .buttonBox .yes{
+  width: 50%;
+  background-color: #363e4a;
+  color: white;
+  border-radius: 0 0 8px 0;
+}
+
+.header {
+  width: 34.8%;
+}
+
+/* coupon_popup */
+.coupon_popup_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.coupon_popup {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 4px 10px 20px 0 rgba(40, 65, 106, 0.21);
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  z-index: 300;
+}
+
+.coupon_popup .contents_box {
+  width: 100%;
+  text-align: center;
+}
+
+.coupon_popup .contents_box .content {
+  display: none;
+  width: 100%;
+  min-height: 144px;
+  padding: 45px 0;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  color: rgba(54, 62, 74, 1);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon_popup .close_btn {
+  width: 100%;
+  aspect-ratio: 305 / 50;
+  background-color: rgba(54, 62, 74, 1);
+}
+
+.coupon_popup .close_btn a {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* coupon_popup */
+
+.oneScan > section:last-child {
+  margin-bottom: 16%;
+}
+
+.oneScan-section {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* oneScan-qr-accordion */
+.oneScan-qr-accordion {
+  padding: 7.8%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(229, 232, 234, 0.56);
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.oneScan-qr-accordion .accordion-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneScan-qr-accordion .accordion-head.on {
+  align-items: center;
+}
+.oneScan-qr-accordion .accordion-head.on .accordion-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+
+.oneScan-qr-accordion .accordion-head.off {
+  align-items: flex-start;
+}
+
+.oneScan-qr-accordion .accordion-text {
+  font-size: 1.17em;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.oneScan-qr-accordion .accordion-text .name {
+  font-weight: bold;
+}
+
+.oneScan-qr-accordion .accordion-btn {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  text-indent: -9999px;
+  visibility: hidden;
+}
+
+.oneScan-qr-accordion .accordion-head .accordion-btn-img {
+  position: relative;
+}
+
+.oneScan-qr-accordion .accordion-head .accordion-btn-img img {
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+
+}
+
+.oneScan-qr-accordion .accordion-head .accordion-btn-img img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.oneScan-qr-accordion .accordion-head.on .accordion-btn-img img:first-child,
+.oneScan-qr-accordion .accordion-head.off .accordion-btn-img img:last-child {
+ opacity: 1;
+}
+
+.oneScan-qr-accordion .accordion-head.on .accordion-btn-img img:last-child,
+.oneScan-qr-accordion .accordion-head.off .accordion-btn-img img:first-child {
+ opacity: 0;
+}
+
+.oneScan-qr-accordion .accordion-cont {
+  height: 0;
+  overflow: hidden;
+}
+
+.oneScan-qr-accordion .accordion-cont .qr_box {
+  width: 46.5%;
+  aspect-ratio: 1 / 1;
+  margin: 8.9% auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.oneScan-qr-accordion .accordion-cont .qr_box img {
+  width: 120%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.oneScan-qr-accordion .accordion-cont .text_box {
+  padding: 3.2% 9.3%;
+  background-color: rgba(240, 242, 245, 1);
+  border-radius: 1em;
+  margin-top: 6.3%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oneScan-qr-accordion .accordion-cont .text_box .title {
+  font-size: 1.06em;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+.oneScan-qr-accordion .accordion-cont .text_box .price {
+  font-size: 1.64em;
+  color: rgba(74, 130, 237, 1);
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+/* oneScan-qr-accordion */
+
+/* oneScan-coupon-tab */
+.oneScan-coupon-tab {
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.oneScan-coupon-tab .coupon-tab {
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 3.33em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oneScan-coupon-tab .coupon-tab .coupon-tab-button {
+  width: 100%;
+  aspect-ratio: 165 / 36;
+  border-radius: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 1);
+  flex: 1;
+  cursor: pointer;
+}
+
+.oneScan-coupon-tab .coupon-tab .coupon-tab-button.active {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.oneScan-coupon-tab .coupon-tab-content {
+  padding-top: 5%;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .coupon-tab-pane {
+  display: none;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .coupon-tab-pane.active {
+  display: block;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-wrapper {
+  align-items: center;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-coupon-list-slide {
+  height: 100%;
+  border-radius: var(--section-border-radius);
+  overflow: hidden;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-slide-none {
+  width: 100%;
+  height: 100% !important;
+  aspect-ratio: 333/350;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: var(--section-border-radius);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-slide-none h4 {
+  font-size: 1.17em;
+  color: rgba(77, 77, 77, 1);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-coupon-list-slide img {
+  object-fit: cover;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-prev,
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-next {
+  width: 1.8%;
+  height: auto;
+  aspect-ratio: 6.02/12;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-prev::after,
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-next::after {
+  content: none;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-prev {
+  background: url(../img/main_banner_prev_btn.png) no-repeat center center;
+  background-size: contain;
+  left: 3.6%;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-button-next {
+  background: url(../img/main_banner_next_btn.png) no-repeat center center;
+  background-size: contain;
+  right: 3.6%;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 {
+  width: 100%;
+  aspect-ratio: 333 / 350;
+  padding-bottom: 1.75em;
+  box-sizing: content-box;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2-none {
+  padding-bottom: 0 !important;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .swiper-coupon-list-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon {
+  width: 100%;
+  aspect-ratio: 333 / 110;
+  padding: 4% 6.3%;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: var(--section-border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-title {
+  font-size: 0.92em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-overflow:ellipsis;
+  white-space:normal;
+  overflow:hidden;
+  word-wrap:break-word;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  word-break: keep-all;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-content .list {
+  font-size: 0.72em;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-content .list .category {
+  flex-shrink: 0;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-content .list .result {
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .my-coupon .coupon-content .list .time {
+  color: rgba(82, 134, 236, 1);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list1 .swiper-pagination {
+  bottom: 3.6%;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .swiper-pagination {
+  bottom: 0;
+}
+
+.oneScan-coupon-tab .coupon-tab-content .swiper-coupon-list2 .swiper-pagination-none {
+  display: none;
+}
+
+.oneScan-coupon-tab .swiper-pagination-bullet {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.oneScan-coupon-tab .swiper-pagination-bullet-active { 
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.oneScan-coupon-tab .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.25em;
+}
+/* oneScan-coupon-tab */
+
+/* oneScan-slide-banner */
+.oneScan-slide-banner {
+  margin-top: 5%;
+}
+
+.oneScan-slide-banner .mainbanner_swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.oneScan-slide-banner .swiper-wrapper {
+  width: 100%;
+}
+
+.oneScan-slide-banner .banner {
+  aspect-ratio: 333 / 130;
+  background-color: rgba(250, 250, 250, 1);
+  border: solid 1px rgba(224, 224, 224, 0.57);
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.oneScan-slide-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oneScan-slide-banner .swiper-pagination {
+  bottom: 3.6%;
+}
+
+.oneScan-slide-banner .swiper-pagination-bullet {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.oneScan-slide-banner .swiper-pagination-bullet-active { 
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.oneScan-slide-banner .swiper-button-prev,
+.oneScan-slide-banner .swiper-button-next {
+  width: 1.8%;
+  height: auto;
+  aspect-ratio: 6.02/12;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oneScan-slide-banner .swiper-button-prev::after,
+.oneScan-slide-banner .swiper-button-next::after {
+  content: none;
+}
+
+.oneScan-slide-banner .swiper-button-prev {
+  background: url(../img/main_banner_prev_btn.png) no-repeat center center;
+  background-size: contain;
+  left: 3.6%;
+}
+
+.oneScan-slide-banner .swiper-button-next {
+  background: url(../img/main_banner_next_btn.png) no-repeat center center;
+  background-size: contain;
+  right: 3.6%;
+}
+
+.oneScan-slide-banner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.25em;
+}
+/* oneScan-slide-banner */
+
+/* oneScan-link-list */
+.oneScan-link-list {
+  margin-top: 5%;
+}
+
+.oneScan-link-list .list > ul > li {
+  margin-top: 3%;
+}
+
+.oneScan-link-list .list > ul > li:nth-child(1) {
+  margin-top: 0;
+}
+
+.oneScan-link-list .list > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.oneScan-link-list .list > ul > li > a > ul {
+  width: 100%;
+  padding: 5.8% 8.4%;
+  background-color: #ffffff;
+  border: solid 1px rgba(229, 232, 234, 0.56);
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--box-shadow);
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.7%;
+}
+
+.oneScan-link-list .list > ul > .banner_li > a > ul {
+  padding: 7.8% 8.4%;
+}
+
+.oneScan-link-list .icon {
+  width: 2em;
+  flex: 0 0 auto;
+}
+
+.oneScan-link-list .icon .img {
+  object-fit: contain;
+}
+
+.oneScan-link-list .text {
+  flex: 1;
+}
+
+.oneScan-link-list .arrow {
+  width: 2.5em;
+  flex: 0 0 auto;
+}
+
+.oneScan-link-list .list_title > span {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: normal;
+  word-break: keep-all;
+}
+
+.oneScan-link-list .list_sub {
+  margin-top: 0.08em;
+}
+
+.oneScan-link-list .list_sub > span {
+  font-size: 0.92em;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: normal;
+  word-break: keep-all;
+}
+/* oneScan-link-list */
+
+/* 예외처리 */
+/* 20241209 기존 로그인 요구 팝업 스타일 추가 */
+#alertPop .alert,
+#alertPop .alert * {
+  box-sizing: revert;
+}
+#alertPop .alert .btn-wrap .btn {
+  font-weight: 800;
+}
+#alertPop .text {
+  padding: 0;
+}
+#alertPop .text .slg{
+  line-height: 1.5;
+}
+
+/* 스와이퍼 */
+.swiper-pagination-bullet:only-child {
+  display: inline-block !important;
+}
