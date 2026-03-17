@@ -104,3 +104,32 @@ let swiperCouponList2_settings = {
 
 let swiperCouponList2 = new Swiper('.swiper-coupon-list2', swiperCouponList2_settings);    
 // oneScan-coupon-tab 끝
+
+// 초시계 시작
+function updateTimers() {
+    const now = new Date();
+    
+    const tomorrow = new Date(now);
+    tomorrow.setDate(now.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
+
+    const diff = tomorrow - now;
+
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    const timeString = `${hours}시 ${minutes}분 ${seconds}초`;
+
+    const timers = document.querySelectorAll('.timerCoup');
+    timers.forEach(timer => {
+        timer.textContent = timeString;
+    });
+}
+
+// 1초마다 실행
+setInterval(updateTimers, 1000);
+
+// 페이지 로드 시 즉시 실행
+updateTimers();
+// 초시계 끝
