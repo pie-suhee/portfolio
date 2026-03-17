@@ -46,7 +46,7 @@ function initHoverMotion() {
 // 3. 타이핑효과
 function typedMotion() {
     const typed = new Typed('#typed', {
-        strings: ['Web Publisher.', 'Problem Solver.', 'Team Player.'],
+        strings: ['Web Publisher.', 'Problem Solver.', 'Team Player.', 'Front-end Developer.'],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true
